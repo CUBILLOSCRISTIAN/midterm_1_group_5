@@ -2,7 +2,7 @@
 
 ## Equipo
 
-- Aveldaño Carlos
+- Avendaño Carlos
 - Cubillos Cristian
 - Diaz Nilson
 
