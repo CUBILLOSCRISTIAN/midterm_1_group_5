@@ -1,0 +1,43 @@
+.headertxt {
+    display: flex;
+    justify-content:flex-end;
+    gap: 0.5rem;
+    background: #fffefe; 
+    padding: 20px;
+  }
+  
+  
+  .item {
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    color: #1a1a33;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .item::after {
+    content: '';
+    position: absolute;
+    left: 0%;
+    bottom: 5px; 
+    background: #ff5c5c; 
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: absolute;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .item:hover {
+    color: #ff5c5c;  
+  }
+  
+  .item:hover::after {
+    transform: scaleX(1);
+  }
+  
