@@ -1,0 +1,299 @@
+/* styles.css */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --dark-background-color: #1a1a1a;
+  --dark-text-color: #ffffff;
+  --padding: 6rem;
+  --margin: 6rem;
+  --card-color: #edf7fa;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: var(--dark-background-color);
+  color: var(--dark-text-color);
+}
+
+/* Add border to all elements
+* {
+  border: 1px solid #e41212;
+} */
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: var(--margin);
+}
+
+.hero-content {
+  padding-right: var(--padding);
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+/* RECENTS POST */
+
+.recent-posts {
+  padding: var(--padding);
+  background-color: var(--card-color);
+}
+
+.header-recent-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.view-all {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.recent-posts,
+.featured-works {
+  padding: var(--padding);
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.post,
+.work {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.work {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Ajusta el margen según sea necesario */
+}
+
+.work img {
+  margin-right: 20px; /* Ajusta el margen según sea necesario */
+  max-width: 150px; /* Ajusta el tamaño máximo de la imagen según sea necesario */
+}
+
+.work-details {
+  flex: 1;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+}
+
+.year-badge {
+  display: inline-block;
+  background-color: #ff5c5c;
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.7rem;
+  border-radius: 60px;
+  font-weight: bold;
+}
+
+.info {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .profile-pic {
+    margin-top: 1rem;
+  }
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Recent Posts Section */
+.recent-posts {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-recent-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header-recent-post h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.view-all {
+  font-size: 16px;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.view-all:hover {
+  color: #0056b3;
+}
+
+/* Posts Grid */
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.post {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.post:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.post-date {
+  font-size: 14px;
+  color: #777;
+  margin: 0 0 15px;
+}
+
+.post p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-recent-post {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-recent-post h2 {
+    margin-bottom: 10px;
+  }
+
+  .posts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .recent-posts {
+    padding: 10px;
+  }
+
+  .post {
+    padding: 15px;
+  }
+
+  .post h3 {
+    font-size: 18px;
+  }
+
+  .post p {
+    font-size: 14px;
+  }
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background-color: var(
+    --primary-color
+  ); /* Usa el color primario definido en :root */
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2980b9; /* Un tono más oscuro del color primario */
+  transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.btn:active {
+  background-color: #1c5980; /* Un tono aún más oscuro para el estado activo */
+  transform: translateY(0); /* Vuelve a su posición original */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más pequeña */
+}
+
+.btn:focus {
+  outline: none; /* Elimina el borde predeterminado al enfocar */
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5); /* Efecto de enfoque accesible */
+}
