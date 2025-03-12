@@ -1,110 +1,95 @@
 .noto-sans-fuente {
-    font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300, 700;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
-
-
-
-body{
-    background-color: white;
-    margin: 0;
-    line-height: 1.5;
-    font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300, 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
-.container{
-    width: 85%;
-    margin: 0 auto;
-    max-width: 65em;
-
+body {
+  background-color: white;
+  margin: 0;
+  line-height: 1.5;
+  font-family: "Noto Sans", sans-serif;
 }
 
-.title{
-    font-weight: 900;
+.container {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 65em;
 }
 
-.subtitulo{
-    font-weight: 700;
-
+.title {
+  font-weight: 900;
 }
 
-.fecha{
-    font-weight: 400;
-    display: inline-block;
-
+.subtitulo {
+  font-weight: 700;
 }
 
-.texto_extra{
-    font-weight: 400;
-    display: inline-block;
-    color: gray;
+.fecha {
+  font-weight: 400;
+  display: inline-block;
 }
 
-.parag{
-    font-weight: 300;
+.texto_extra {
+  font-weight: 400;
+  display: inline-block;
+  color: gray;
 }
 
-.imagen{
-    float: left;
-    max-width: 50%;
-    height: auto;
+.parag {
+  font-weight: 300;
 }
 
-.contenido_work{
-
-    margin-bottom: 10em;
+.imagen {
+  float: left;
+  max-width: 50%;
+  height: auto;
 }
 
-.btn{
-    font-weight: 100;
-    color: black;
-    text-decoration: none;
-}
-.btn:hover{
-
-    text-decoration: underline;
+.contenido_work {
+  margin-bottom: 10em;
 }
 
-.headertxt{
-    margin: 0;
-    text-align: right;
-    margin-right: 10%;
-
+.btn {
+  font-weight: 100;
+  color: black;
+  text-decoration: none;
+}
+.btn:hover {
+  text-decoration: underline;
 }
 
-.alter{
-    color: red;
+.headertxt {
+  margin: 0;
+  text-align: right;
+  margin-right: 10%;
 }
 
-.footerdiv{
-    text-align: center;
-
+.alter {
+  color: red;
 }
 
-.redsocial{
-
-    
-    height: auto;
-    color: #111;
+.footerdiv {
+  text-align: center;
 }
 
-.redsocial a{
-    
-    height: auto;
+.redsocial {
+  height: auto;
+  color: #111;
 }
 
-.redsocial a i{
-    
-    height: auto;
-    width: auto;
-    color: #111;
+.redsocial a {
+  height: auto;
 }
 
-.footertxt{
-    font-weight: 100;
+.redsocial a i {
+  height: auto;
+  width: auto;
+  color: #111;
+}
 
+.footertxt {
+  font-weight: 100;
 }

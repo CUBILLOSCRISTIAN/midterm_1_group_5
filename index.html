@@ -18,11 +18,26 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/header.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
+    <header>
+      <div class="headertxt">
+        <a href="/" class="item">Home</a>
+        <a href="blog.html" class="item">Blog</a>
+        <a href="works.html" class="item">Works</a>
+        <a href="workdetail.html" class="item">Contact</a>
+      </div>
+    </header>
     <!-- HEADER -->
-    <header class="header">
+    <!-- <header class="header">
       <nav class="navbar">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
@@ -33,7 +48,7 @@
         </ul>
         <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
       </nav>
-    </header>
+    </header> -->
 
     <main class="main-content">
       <!-- HERO SECTION -->
@@ -48,7 +63,7 @@
           <a href="resume.pdf" class="btn">Download Resume</a>
         </div>
         <img
-          src="public/external/ellipse1698-xo6k-300h.png"
+          src="Media/Ellipse 1.png"
           alt="John's Profile Picture"
           class="profile-pic"
         />
@@ -88,12 +103,14 @@
         <div class="works-grid">
           <article class="work">
             <img
-              src="public/external/rectangle301016-gmbg-300w.png"
+              src="Media/Rectangle 30.png"
               alt="Designing Dashboards"
             />
             <div class="work-details">
               <h3>Designing Dashboards</h3>
-              <p class="work-year">2020</p>
+              <div class="info">
+                <span class="year-badge">2025</span>
+              </div>
               <p>
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint. Velit officia consequat duis enim velit mollit.
@@ -106,20 +123,19 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="social-links">
-        <a href="#" aria-label="Facebook"
-          ><img src="public/external/fbi146-jhr.svg" alt="Facebook"
-        /></a>
-        <a href="#" aria-label="LinkedIn"
-          ><img src="public/external/linkedini146-jezv.svg" alt="LinkedIn"
-        /></a>
-        <a href="#" aria-label="Instagram"
-          ><img src="public/external/vectori146-mjp.svg" alt="Instagram"
-        /></a>
+    <footer>
+      <div class="footerdiv">
+          <ul class="redes-sociales">
+              <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="icon"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
       </div>
-      <p>Copyright ©2020 All rights reserved</p>
-    </footer>
+  </section>
+      <div class="footertxt">
+          <p>Copyright 2050 Grupo 5</p>
+      </div>
+  </footer>
 
     <script>
       const themeToggle = document.getElementById("theme-toggle");

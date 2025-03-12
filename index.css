@@ -25,10 +25,10 @@ body.dark-mode {
   color: var(--dark-text-color);
 }
 
-/* Add border to all elements */
+/* Add border to all elements
 * {
   border: 1px solid #e41212;
-}
+} */
 
 /* HERO SECTION */
 .hero {
@@ -117,6 +117,24 @@ body.dark-mode {
 .social-links img {
   width: 24px;
   height: 24px;
+}
+
+.year-badge {
+  display: inline-block;
+  background-color: #ff5c5c;
+  color: white;
+  padding: 5px 10px;
+  font-size: .7rem;
+  border-radius: 60px;
+  font-weight: bold;
+}
+
+.info {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {
