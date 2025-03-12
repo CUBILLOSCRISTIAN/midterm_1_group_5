@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="John's Portfolio - Creative Technologist"
+    />
+    <meta
+      name="keywords"
+      content="portfolio, creative technologist, design, development"
+    />
+    <meta name="author" content="John Doe" />
+    <title>John's Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="works.html">Works</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Hi, I am John, Creative Technologist</h1>
+          <p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+          <a href="resume.pdf" class="btn">Download Resume</a>
+        </div>
+        <img
+          src="public/external/ellipse1698-xo6k-300h.png"
+          alt="John's Profile Picture"
+          class="profile-pic"
+        />
+      </section>
+
+      <!-- RECENT POSTS -->
+      <section class="recent-posts">
+        <div class="header-recent-post">
+          <h2>Recent Posts</h2>
+          <a href="blog.html" class="view-all">View All</a>
+        </div>
+
+        <div class="posts-grid">
+          <article class="post">
+            <h3>Making a design system from scratch</h3>
+            <p class="post-date">12 Feb 2020</p>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </article>
+          <article class="post">
+            <h3>Creating pixel perfect icons in Figma</h3>
+            <p class="post-date">12 Feb 2020</p>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="featured-works">
+        <h2>Featured Works</h2>
+        <div class="works-grid">
+          <article class="work">
+            <img
+              src="public/external/rectangle301016-gmbg-300w.png"
+              alt="Designing Dashboards"
+            />
+            <div class="work-details">
+              <h3>Designing Dashboards</h3>
+              <p class="work-year">2020</p>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </article>
+          <!-- Repeat for other works -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"
+          ><img src="public/external/fbi146-jhr.svg" alt="Facebook"
+        /></a>
+        <a href="#" aria-label="LinkedIn"
+          ><img src="public/external/linkedini146-jezv.svg" alt="LinkedIn"
+        /></a>
+        <a href="#" aria-label="Instagram"
+          ><img src="public/external/vectori146-mjp.svg" alt="Instagram"
+        /></a>
+      </div>
+      <p>Copyright ©2020 All rights reserved</p>
+    </footer>
+
+    <script>
+      const themeToggle = document.getElementById("theme-toggle");
+      themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        themeToggle.textContent = document.body.classList.contains("dark-mode")
+          ? "☀️"
+          : "🌙";
+      });
+    </script>
+  </body>
+</html>
